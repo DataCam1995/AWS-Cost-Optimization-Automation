@@ -7,3 +7,4 @@ def lambda_handler(event, context):
     response = ec2.stop_instances(InstanceIds=instances)
     print(f"Stopped EC2 Instances: {instances}")
     return response
+Add Lambda function to stop EC2 on budget breach
